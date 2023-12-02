@@ -10,6 +10,10 @@ body {
     font-family: 'Sanchez', 'Times New Roman', serif;
 }
 
+p {
+    padding-top: 10px;
+}
+
 a {
     text-decoration: none;
     transition: all .5s ease-in-out;
@@ -137,7 +141,8 @@ input, textarea {
 
 /* Meals and Hours */
 
-#meals-and-hours .grid-con {
+
+#meals-and-hours .content-nav {
     background-color: #d8d8d8;
 }
 
@@ -195,6 +200,8 @@ input, textarea {
     align-self: end;
 }
 
+
+
 /* menu drop downs */
 
 .menu-con {
@@ -209,12 +216,13 @@ input, textarea {
     cursor: pointer;
 }
 
-#daily-ft-con label p {
+.menu-lists label p {
     display: inline;
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
-#daily-ft-con label img {
+
+.menu-lists label img {
     width: 20px;
     height: 20px;
     transition: all .5s ease;
@@ -222,24 +230,48 @@ input, textarea {
 }
 
 #starters-con label p {
-    display: inline;
-    margin-right: 15px;
+    padding-left: 0px;
 }
 
 #starters-con label img {
-    width: 20px;
-    height: 20px;
-    transition: all .5s ease;
-    margin-right: 15px;
+    margin-right: 40px;
 }
 
-.menu-con input, #menu-dropdowns {
+#starters-con label {
+    margin-left: -30px;
+}
+
+#entrees-con label img {
+    margin-right: 45px;
+}
+
+#entrees-con label {
+    margin-left: -33px;
+}
+
+#desserts-con label img {
+    margin-right: 40px;
+}
+
+#desserts-con label {
+    margin-left: -30px;
+}
+
+#breakfast-con label img {
+    margin-right: 40px;
+}
+
+#breakfast-con label {
+    margin-left: -30px;
+}
+
+.menu-con input, .menu-dropdowns {
     display: none;
 }
 
 /* sibling selectors */
 
-.menu-con input:checked ~ #menu-dropdowns {
+.menu-con input:checked ~ .menu-dropdowns {
     display: block;
 }
 
@@ -254,7 +286,7 @@ input, textarea {
 
 }
 
-.menu-con ul li, #starters ul li {
+.menu-con ul li {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
@@ -263,9 +295,55 @@ input, textarea {
 
 }
 
-#menu-dropdowns {
+.menu-dropdowns {
     background-color: #ececec;
 }
+
+.menu-lists {
+    margin-bottom: 30px;
+}
+
+.menu-lists h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#drinks-con ul li {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-bottom: none;
+
+}
+
+#winebyg {
+    border-top: 1px solid #6b6b6b;
+    padding-top: 10px;
+}
+
+#drinks-con ul h4 {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-top: 1px solid #6b6b6b;
+
+}
+
+
+
+/* Wine Awards */ 
+
+#wine-hero-con {
+    background: url(../images/mobile-dining-award.jpg) no-repeat;
+    height: 195px;
+}
+
+#wine-heading-box {
+    align-self: end;
+}
+
 
 /* Footer */
 
@@ -275,7 +353,7 @@ input, textarea {
     color: #fff;
     font-size: 12px;
     margin-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 #footer-hero h3 {

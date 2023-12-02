@@ -64,7 +64,8 @@
             <!--Meals and Hours-->
 
             <div id="meals-and-hours">
-                <div class="grid-con">
+                <section class="grid-con content-nav">
+                    <h2 class="hidden">Nav for contents of the page</h2>
                     <nav id="meals-and-hours-nav" class="col-span-full">
                         <h2 class="hidden">Nav for contents of the page</h2>
                         <ul>
@@ -73,43 +74,50 @@
                             <li><a href="#">Wine Spectors Award of Excellence</a></li>
                         </ul>
                     </nav>
-                </div>
-
+                </section>
+            
                  <section id="meals-and-hours-hero-con" class="grid-con">
                     <div id="meals-and-hours-heading-box" class="col-span-full">
                         <h3 class="hero-img-h3"><span>Couples Resort</span><br>Meals and Hours</h3>
                     </div>
                  </section>
                 
-                 <div class="grid-con"></div>
+                 <div class="grid-con meals-list">
                     <div class="col-span-full line-separator"></div>
-                    <p><span>Gastronomic 5 course Meal:</span> 1 amuse bouche, 2 Starters (either Appy, soup or Salad), 1 main Entrée Choice and 1 Dessert Choice.</p>
-                    <p><span>Vegan and Vegetarian dishes are available:</span> We offer a large array of choices from Heart Smart, Gluten Free, and Ceilac Disease on your request.</p>
-                    <p><span>Dining Room Open</span> - 6:00 pm to 8:00 pm (to 9:00 pm on Fridays). Reserve Table and Place Order Between 12pm - 5pm. 866-202-1179 ext 108</p>
-                    <p><span>Breakfast Room-Service Hours</span> - 8:00 pm to 10:30 am. Best to place with your dinner order. 866-202-1179 ext 102</p>
-                    <p><span>Lunch Menu</span> - Extra charge. Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</p>
-                    <p><span>Patio Services</span> - Lunch Only - Please wait tot be seated as the tables need to be sanitized.</p>
-                    <p><span>CHEF RONNIE; TRANSLATION = GOURMET!</span>
+                    <p class="col-span-full"><span>Gastronomic 5 course Meal:</span> 1 amuse bouche, 2 Starters (either Appy, soup or Salad), 1 main Entrée Choice and 1 Dessert Choice.</p>
+                    <p class="col-span-full"><span>Vegan and Vegetarian dishes are available:</span> We offer a large array of choices from Heart Smart, Gluten Free, and Ceilac Disease on your request.</p>
+                    <p class="col-span-full"><span>Dining Room Open</span> - 6:00 pm to 8:00 pm (to 9:00 pm on Fridays). Reserve Table and Place Order Between 12pm - 5pm. 866-202-1179 ext 108</p>
+                    <p class="col-span-full"><span>Breakfast Room-Service Hours</span> - 8:00 pm to 10:30 am. Best to place with your dinner order. 866-202-1179 ext 102</p>
+                    <p class="col-span-full"><span>Lunch Menu</span> - Extra charge. Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</p>
+                    <p class="col-span-full"><span>Patio Services</span> - Lunch Only - Please wait tot be seated as the tables need to be sanitized.</p>
+                    <p class="col-span-full"><span>CHEF RONNIE; TRANSLATION = GOURMET!</span>
                         Executive Chef, Ronnie Coppens with Chef, Evan tantalize with their Brigade of 7 Chef d'Parties. 
                         Menus are focused on freshness, seasonal availability and Ontario produced foods. Only the highest quality products enter the kitchen where the team then produces meals; ( Fresh Fish offered Daily as one of the Chef's Daily features), from their expansive experience, that will tantalize your taste buds!</p>
+                </div>
             </div>
 
             <!--Menu-->
-            <section id="menu-hero-con" class="grid-con">
+        <div id="menu">
+            <section id="menu-hero-con" class="grid-con"> 
+                <h2 class="hidden">Dining Menu</h2>      
                 <section id="menu-heading-box" class="col-span-full">
-                    <h2 class="hero-img-h2">
-                        <span>Couples Resort</span><br>Menu</h2>
+                    <h3 class="hero-img-h3">
+                        <span>Couples Resort</span><br>Menu</h3>
                 </section>
             </section>
+        </div>
 
-            <section class="grid-con">
+            <div class="grid-con">
+            <div class="line-separator col-span-full"></div>
+            <section class="menu-lists">
+                <h2 class="hidden">Menu Items</h2>
                 <nav id="daily-ft-con" class="col-span-full menu-con">
                     <h2 class="hidden">Daily Features</h2>
                     <input type="checkbox" id="dailyarrow">
                         <label for="dailyarrow">
-                            <img src="images/arrow.svg" alt="a sideways triangle"><p>Daily Features</p>
+                            <img src="images/arrow.svg" alt="a sideways triangle">DAILY FEATURES
                         </label>
-                    <div id="menu-dropdowns">
+                    <div class="menu-dropdowns">
                         <ul>
                             <li>Amuse Bouche
                                 Bite Size Caprese Salad with Honey Balsamic Reduction</li>
@@ -133,9 +141,9 @@
                     <h2 class="hidden">Starters</h2>
                     <input type="checkbox" id="starterarrow">
                         <label for="starterarrow">
-                            <img src="images/arrow.svg" alt="a sideways triangle"><p>Starters</p>
+                            <img src="images/arrow.svg" alt="a sideways triangle">STARTERS
                         </label>
-                    <div id="menu-dropdowns">
+                    <div class="menu-dropdowns">
                         <ul>
                             <li>Watermelon salad
                                 Fresh water melon, Baby Arugula, cucumber, Goat cheese cherry tomatoes, creamy cassis dressing</li>
@@ -145,26 +153,194 @@
                                 Caramelized peaches, baby arugula, Bermuda onion, balsamic maple vinaigrette</li>
                             <li>Kale Caesar
                                 Fresh kale, crispy panchetta, parm crisp</li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav id="entrees-con" class="col-span-full menu-con">
+                    <h2 class="hidden">Entrees</h2>
+                    <input type="checkbox" id="entreesarrow">
+                        <label for="entreesarrow">
+                            <img src="images/arrow.svg" alt="a sideways triangle">ENTREES
+                        </label>
+                    <div class="menu-dropdowns">
+                        <ul>
+                            <li>Petit Mignon - GF
+                                4oz Filet mignon, pommery mash potato, seasonal vegetables, port wine tarragon demi</li>
+                            <li>Chicken Supreme - GF
+                                Chicken supreme, grilled portobella, brie, blueberry compote, seasonal vegetables, roasted garlic mashed potato</li>
+                            <li>Grilled Angus striploin - GF
+                                Grilled 10 oz striploin, garlic mash, seasonal vegetables, tomato onion jam, bacon au jus</li>
+                            <li>Rack of Lamb
+                                Greek style roasted potatoes, seasonal vegetables, eggplant compote, onion mint jus</li>
+                            <li>Chorizo carbonara
+                                In-house linguine, double smoked bacon, garlic, white wine, crispy sage, parmigiana reggiano</li>
+                            <li>Rigatoni
+                                In-house Rigatoni, sauteed beef, bermuda onion, peppers, spinach in chipotle cream sauce</li>
+                            <li>Risotto Jambalaya
+                                Arborio Rice tossed with tiger prawns, grilled chicken, chorizo sausages, red onions, bell peppers and garlic in Cajun herbs tomato sauce</li>
+                            <li>Pasta - V
+                                Beet root pasta, with lemon ricotta, baby arugula, marinated cherry tomatoes and basil pesto</li>
+                            <li>Butternut Squash - V
+                                Roasted butternut squash, whipped feta, candied pecans, creamed Baileys gastrique, saffron infused quinoa</li>
+                            <li>Risotto - V
+                                Vegetarian risotto, sautéed mushrooms, onion, red pepper, marinara sauce with grilled tofu</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav id="desserts-con" class="col-span-full menu-con">
+                    <h2 class="hidden">Desserts</h2>
+                    <input type="checkbox" id="dessertsarrow">
+                        <label for="dessertsarrow">
+                            <img src="images/arrow.svg" alt="a sideways triangle">DESSERTS
+                        </label>
+                    <div class="menu-dropdowns">
+                        <ul>
+                            <li>Chocolate Tower
+                                Soft raspberry ganache tower</li>
+                            <li>Key Lime Pie
+                                Tangy sweet pie</li>
+                            <li>Crème Brulee
+                                Daily creation</li>
+                            <li>White chocolate cheesecake
+                                White chocolate, blueberry bourbon swirl</li>
+                            <li>Dessert of the day
+                                Daily Chef Creation</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav id="breakfast-con" class="col-span-full menu-con">
+                    <h2 class="hidden">Desserts</h2>
+                    <input type="checkbox" id="breakfastarrow">
+                        <label for="breakfastarrow">
+                            <img src="images/arrow.svg" alt="a sideways triangle">BREAKFAST
+                        </label>
+                    <div class="menu-dropdowns">
+                        <p>BREAKFAST ROOM-SERVICE HOURS - 8:30 am to 10:30 am. 866-202-1179 ext 102</p>
+                        <br>
+                        <ul>
+                            <li>Beverages
+                                Tea, Coffee, Hot Chocolate or Milk</li>
+                            <li>Juices
+                                Apple, Orange, Ruby Red Grapefruit or Cranberry</li>
                         </ul>
 
-                <nav id="starters-con" class="col-span-full menu-con">
-                    <h2 class="hidden">Starters</h2>
-                    <input type="checkbox" id="entreesarrow">
-                        <label for="antreesarrow">
-                            <img src="images/arrow.svg" alt="a sideways triangle"><p>Starters</p>
-                        </label>
-                    <div id="menu-dropdowns">
+                            <h3>ENTREES</h3>
                         <ul>
-                            <li>Watermelon salad
-                                Fresh water melon, Baby Arugula, cucumber, Goat cheese cherry tomatoes, creamy cassis dressing</li>
-                            <li>Warm beet Salad
-                                Honey beet purée, horseradish creme fresh</li>
-                            <li>Peach Salad
-                                Caramelized peaches, baby arugula, Bermuda onion, balsamic maple vinaigrette</li>
-                            <li>Kale Caesar
-                                Fresh kale, crispy panchetta, parm crisp</li>
+                            <li>Fresh Break
+                                Seasonal fresh fruit, yogurt and muesli cereal</li>
+                            <li>Scramble Tofu
+                                Pan fried Tofu with turmeric and Garden vegetables</li>
+                            <li>Eggs Benedict
+                                Poached eggs, Canadian Bacon & Creamy Hollandaise a top English Muffin, with dill cake and tomato salad</li>
+                            <li>Croque Monsieur
+                                Shaved Ham and melted Swiss cheese in pan fried Texas bread</li>
+                            <li>Avocado Toast
+                                Sliced tomatoes, hummus, parmesan crisp, red onion on rye bread and arugula salad</li>
+                            <li>Belgium Waffle (available gluten free)
+                                Topped with Cherry Apple Compote and real Maple syrup Cream</li>
+                            <li>Couples Sunrise
+                                2 eggs,served with bacon or ham, Home Fries and Toast</li>
+                            <li>Omelette Choose - Any 3 Ingredients:
+                                Choose your style, and then choose any 3 Ingredients
+                                Smoked Salmon, Asparagus, Bermuda Onions, Sweet Peppers, Mushrooms, Brie, Mozzarella, Tomato, Bacon or Ham</li>
                         </ul>
+                    </div>
+                </nav>
+
+                <nav id="lunch-con" class="col-span-full menu-con">
+                    <h2 class="hidden">Desserts</h2>
+                    <input type="checkbox" id="luncharrow">
+                        <label for="luncharrow">
+                            <img src="images/arrow.svg" alt="a sideways triangle">LUNCH
+                        </label>
+                    <div class="menu-dropdowns">
+                        <h3>Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</h3>
+                        <br>
+                        <ul>
+                            <li>Chicken club wrap...19
+                                Grilled chicken breast, Maple pepper Bacon, Romaine leaf, tomatoes, light Mayo wrapped in flour tortilla and pressed</li>
+                            <li>Panini (Served with a Salad) ...19
+                                Roasted Beef - Lettuce, tomato, Bermuda onion, Smoked Gouda cheese, sriracha sauce, ciabatta bun
+                                Grilled Chicken - Soft brie cheese, lettuce, roasted red peppers, light mayo and Basil pesto, ciabatta bun</li>
+                            <li>Charcuterie Board...$25
+                                3 assorted Meats, 3 assorted cheeses, Cranberry Focaccia, Radish, Thin sliced beets and Dried Fruit</li>
+                            <li>Shrimps Cocktail...14
+                                Large Prawns poached in wine court bouillon, chilled, served with Spiced Avocado dip</li>
+                            <li>Artisan Salad...12
+                                Assortment of greens, grape Tomatoes, red onions, beets, cucumber, radish, red peppers, house vinaigrette
+                                Add Chicken or smoked salmon...8</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav id="drinks-con" class="col-span-full menu-con">
+                    <h2 class="hidden">Drinks</h2>
+                    <input type="checkbox" id="drinkarrow">
+                        <label for="drinkarrow">
+                            <img src="images/arrow.svg" alt="a sideways triangle">DRINKS
+                        </label>
+                    <div class="menu-dropdowns">
+                        <h3>SEASONAL DRINK FEATURE (8OZ) $15
+                            PITCHER (32OZ) $45</h3>
+                        <br>
+                        <ul>
+                            <li>Daiquiri
+                                Strawberry, Raspberry, Peach, Pina Calada</li>
+                        </ul>
+                            <h3 id="winebyg">WINE BY THE GLASS (6OZ) $14</h3>
+                            <h4>WHITE</h4>
+                        <ul>
+                            <li>Unoaked Chardonnay</li>
+                            <li>Grigio</li>
+                            <li>Late Autumn Riesling</li>
+                            <li>Sauvignon Blanc</li>
+                        </ul>
+                            <h4>RED</h4>
+                        <ul>
+                            <li>Baco Noir</li>
+                            <li>Cabernet Sauvignon</li>
+                            <li>Merlot</li>
+                            <li>Pinot Noir</li>
+                            <li>Shiraz</li>
+                        </ul>
+                            <h4>ROSÉ</h4>
+                        <ul>    
+                            <li>Summer Rosé</li>
+                        </ul>
+                            <h3>BEER</h3>
+                            <h4>LOCAL CRAFT BEER</h4>
+                        <ul>
+                            <li>Lake of Bays Pilsner ... $9.50
+                            <li>Muskoka Craft Lager ...$8</li>
+                            <li>Muskoka Mad Tom IPA ...$8</li>
+                        </ul>
+                            <h4>CIDER</h4>
+                        <ul>
+                            <li>Thornbury Cider ... $9.50</li>
+                        </ul>
+                            <h4>CANADIAN BEER ... $8</h4>
+                        <ul>
+                            <li>Mill Street Organic</li>
+                            <li>Steam Whistle</li>
+                            <li>Rickards Red</li>
+                            <li>Coors Light</li>
+                            <li>Alexander Keith's IPA</li>
+                            <li>Miller Genuine Draft</li>
+                            <li>Budweiser</li>
+                        </ul>
+                            <h4>IMPORT BEER ... $9</h4>
+                        <ul>    
+                            <li>Heineken</li>
+                            <li>Corona</li>
+                            <li>Stella Artois</li>
+                            <li>Guinness</li>
+                        </ul>
+                    </div>
+                </nav>
             </section>
+        </div>
         <!--Wine Awards-->
 
         <div id="wine-con">
