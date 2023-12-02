@@ -185,6 +185,7 @@ input, textarea {
 
 /* Menu */
 
+
 #menu-hero-con {
     background: url(../images/mobile-dining-menu.jpg) no-repeat;
     height: 195px;
@@ -194,23 +195,76 @@ input, textarea {
     align-self: end;
 }
 
+/* menu drop downs */
 
-/* Wine */
-
-#wine-hero-con {
-    background: url(../images/mobile-dining-award.jpg);
-    height: 195px;
+.menu-con {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #d4d4d4;
+    width: 300px;
+    margin-left: 41px;
 }
 
-#wine-heading-box {
-    align-self: flex-end;
+.menu-con label {
+    cursor: pointer;
 }
 
-#wine-con p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+#daily-ft-con label p {
+    display: inline;
     margin-right: 15px;
-    margin-left: 15px;
+}
+
+#daily-ft-con label img {
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+    margin-right: 15px;
+}
+
+#starters-con label p {
+    display: inline;
+    margin-right: 15px;
+}
+
+#starters-con label img {
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+    margin-right: 15px;
+}
+
+.menu-con input, #menu-dropdowns {
+    display: none;
+}
+
+/* sibling selectors */
+
+.menu-con input:checked ~ #menu-dropdowns {
+    display: block;
+}
+
+.menu-con input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+.menu-con ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu-con ul li, #starters ul li {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-bottom: 1px solid #6b6b6b;
+
+}
+
+#menu-dropdowns {
+    background-color: #ececec;
 }
 
 /* Footer */
