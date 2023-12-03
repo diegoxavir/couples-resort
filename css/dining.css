@@ -10,6 +10,10 @@ body {
     font-family: 'Sanchez', 'Times New Roman', serif;
 }
 
+p {
+    padding-top: 10px;
+}
+
 a {
     text-decoration: none;
     transition: all .5s ease-in-out;
@@ -132,5 +136,273 @@ input, textarea {
 #hero-summary p {
     font-size: 14px;
     line-height: 22px;
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/* Meals and Hours */
+
+
+#meals-and-hours .content-nav {
+    background-color: #d8d8d8;
+}
+
+#meals-and-hours-nav {
+    padding-top: 20px;
+}
+
+#meals-and-hours-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#meals-and-hours-nav ul li {
+    margin-bottom: 15px;
+}
+
+#meals-and-hours-nav ul li a {
+    color: inherit;
+    padding: 5px;
+}
+
+#meals-and-hours-nav ul li a.selected {
+    border-left: #9a0218 solid 5px;
+}
+
+#meals-and-hours-hero-con {
+    background: url(../images/mobile-dining-meals-and-hours.jpg) no-repeat;
+    height: 195px;
+}
+
+#meals-and-hours-heading-box {
+    align-self: end;
+}
+
+.meals-list .col-span-full {
+padding-right: 40px;
+}
+
+.meals-list li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+#meals-and-hours p:last-child {
+    margin-bottom: 20px;
+}
+
+.meals-list span {
+    font-weight: bold;
+}
+
+/* Menu */
+
+
+#menu-hero-con {
+    background: url(../images/mobile-dining-menu.jpg) no-repeat;
+    height: 195px;
+}
+
+#menu-heading-box {
+    align-self: end;
+}
+
+
+
+/* menu drop downs */
+
+
+.menu-con {
+    margin-top: 30px;
+    background-color: #d4d4d4;
+    width: 300px;
+    margin-left: 41px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#daily-ft-con {
+    margin-top: 40px;
+}
+
+
+.menu-dropdowns {
+    text-align: center;
+}
+
+.menu-con label {
+    cursor: pointer;
+}
+
+.menu-lists label p {
+    display: inline;
+
+}
+
+.menu-lists label img {
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+}
+
+/*menu title spacing */
+
+.menu-lists label {
+    margin-left: 45px;
+}
+
+
+#daily-ft-con img {
+    margin-right: 15px;
+}
+
+#starters-con label img {
+    margin-right: 43px;
+}
+
+#entrees-con label img {
+    margin-right: 45px;
+}
+
+#desserts-con label img {
+    margin-right: 42px;
+}
+
+
+#breakfast-con label img {
+    margin-right: 35px;
+}
+
+#lunch-con label img {
+    margin-right: 55px;
+}
+
+#drinks-con label img {
+    margin-right: 53px;
+}
+
+.menu-con input, .menu-dropdowns {
+    display: none;
+}
+
+/* sibling selectors */
+
+.menu-con input:checked ~ .menu-dropdowns {
+    display: block;
+}
+
+.menu-con input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+/* Menu list styling */
+
+.menu-con ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu-con ul li {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-bottom: 1px solid #6b6b6b;
+
+}
+
+.menu-dropdowns {
+    background-color: #ececec;
+}
+
+.menu-lists {
+    margin-bottom: 30px;
+}
+
+.menu-lists h3 {
+    padding-top: 10px;
+}
+
+
+.menu-lists h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#drinks-con ul li {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-bottom: none;
+
+}
+
+#winebyg {
+    border-top: 1px solid #6b6b6b;
+    padding-top: 10px;
+}
+
+#drinks-con ul h4 {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    border-top: 1px solid #6b6b6b;
+
+}
+
+.menu-lists .menu-con:last-child {
+    margin-bottom: 40px;
+}
+
+/* Wine Awards */ 
+
+#wine-hero-con {
+    background: url(../images/mobile-dining-award.jpg) no-repeat;
+    height: 195px;
+}
+
+#wine-heading-box {
+    align-self: end;
+}
+
+#wine-con p {
+    padding-top: 20px;
+}
+
+/* Footer */
+
+#footer-hero {
+    background-image: url(../images/footer.jpg);
+     background-repeat: no-repeat;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+#footer-hero h3 {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+#footer-privacy .line-separator {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#footer-contact-info h3 {
+    font-size: 23px;
+}
+
+#footer-contact-info p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
 }
