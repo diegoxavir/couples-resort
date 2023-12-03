@@ -82,18 +82,21 @@
                     </div>
                  </section>
                 
-                 <div class="grid-con meals-list">
+                 <section class="grid-con meals-list">
+                    <h2 class="hidden">The Melas List</h2>
                     <div class="col-span-full line-separator"></div>
-                    <p class="col-span-full"><span>Gastronomic 5 course Meal:</span> 1 amuse bouche, 2 Starters (either Appy, soup or Salad), 1 main Entrée Choice and 1 Dessert Choice.</p>
-                    <p class="col-span-full"><span>Vegan and Vegetarian dishes are available:</span> We offer a large array of choices from Heart Smart, Gluten Free, and Ceilac Disease on your request.</p>
-                    <p class="col-span-full"><span>Dining Room Open</span> - 6:00 pm to 8:00 pm (to 9:00 pm on Fridays). Reserve Table and Place Order Between 12pm - 5pm. 866-202-1179 ext 108</p>
-                    <p class="col-span-full"><span>Breakfast Room-Service Hours</span> - 8:00 pm to 10:30 am. Best to place with your dinner order. 866-202-1179 ext 102</p>
-                    <p class="col-span-full"><span>Lunch Menu</span> - Extra charge. Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</p>
-                    <p class="col-span-full"><span>Patio Services</span> - Lunch Only - Please wait tot be seated as the tables need to be sanitized.</p>
-                    <p class="col-span-full"><span>CHEF RONNIE; TRANSLATION = GOURMET!</span>
-                        Executive Chef, Ronnie Coppens with Chef, Evan tantalize with their Brigade of 7 Chef d'Parties. 
-                        Menus are focused on freshness, seasonal availability and Ontario produced foods. Only the highest quality products enter the kitchen where the team then produces meals; ( Fresh Fish offered Daily as one of the Chef's Daily features), from their expansive experience, that will tantalize your taste buds!</p>
-                </div>
+                    <ul class="col-span-full">
+                        <li><span>Gastronomic 5 course Meal:</span><br> 1 amuse bouche, 2 Starters (either Appy, soup or Salad), 1 main Entrée Choice and 1 Dessert Choice.</li>
+                        <li><span>Vegan and Vegetarian dishes are available:</span><br> We offer a large array of choices from Heart Smart, Gluten Free, and Ceilac Disease on your request.</li>
+                        <li><span>Dining Room Open</span><br> - 6:00 pm to 8:00 pm (to 9:00 pm on Fridays). Reserve Table and Place Order Between 12pm - 5pm. 866-202-1179 ext 108</li>
+                        <li><span>Breakfast Room-Service Hours</span><br> - 8:00 pm to 10:30 am. Best to place with your dinner order. 866-202-1179 ext 102</li>
+                        <li><span>Lunch Menu</span><br> - Extra charge. Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</li>
+                        <li><span>Patio Services</span><br> - Lunch Only - Please wait tot be seated as the tables need to be sanitized.</li>
+                        <li><span>CHEF RONNIE; TRANSLATION = GOURMET!</span><br>
+                            Executive Chef, Ronnie Coppens with Chef, Evan tantalize with their Brigade of 7 Chef d'Parties. 
+                            Menus are focused on freshness, seasonal availability and Ontario produced foods. Only the highest quality products enter the kitchen where the team then produces meals; ( Fresh Fish offered Daily as one of the Chef's Daily features), from their expansive experience, that will tantalize your taste buds!
+                    </ul>
+                </section>
             </div>
 
             <!--Menu-->
@@ -107,15 +110,14 @@
             </section>
         </div>
 
-            <div class="grid-con">
+            <div class="grid-con menu-lists">
             <div class="line-separator col-span-full"></div>
-            <section class="menu-lists">
                 <h2 class="hidden">Menu Items</h2>
                 <nav id="daily-ft-con" class="col-span-full menu-con">
                     <h2 class="hidden">Daily Features</h2>
                     <input type="checkbox" id="dailyarrow">
                         <label for="dailyarrow">
-                            <img src="images/arrow.svg" alt="a sideways triangle">DAILY FEATURES
+                            <img src="images/arrow.svg" alt="a sideways triangle"><span>DAILY FEATURES</span>
                         </label>
                     <div class="menu-dropdowns">
                         <ul>
@@ -160,8 +162,9 @@
                     <h2 class="hidden">Entrees</h2>
                     <input type="checkbox" id="entreesarrow">
                         <label for="entreesarrow">
-                            <img src="images/arrow.svg" alt="a sideways triangle">ENTREES
+                            <img src="images/arrow.svg" alt="a sideways triangle"><span>ENTREES</span>
                         </label>
+                        
                     <div class="menu-dropdowns">
                         <ul>
                             <li>Petit Mignon - GF
@@ -211,13 +214,13 @@
                 </nav>
 
                 <nav id="breakfast-con" class="col-span-full menu-con">
-                    <h2 class="hidden">Desserts</h2>
+                    <h2 class="hidden">Breakfast</h2>
                     <input type="checkbox" id="breakfastarrow">
                         <label for="breakfastarrow">
                             <img src="images/arrow.svg" alt="a sideways triangle">BREAKFAST
                         </label>
                     <div class="menu-dropdowns">
-                        <p>BREAKFAST ROOM-SERVICE HOURS - 8:30 am to 10:30 am. 866-202-1179 ext 102</p>
+                        <h3>BREAKFAST ROOM-SERVICE HOURS - 8:30 am to 10:30 am. 866-202-1179 ext 102</h3>
                         <br>
                         <ul>
                             <li>Beverages
@@ -226,7 +229,7 @@
                                 Apple, Orange, Ruby Red Grapefruit or Cranberry</li>
                         </ul>
 
-                            <h3>ENTREES</h3>
+                            <h4>ENTREES</h4>
                         <ul>
                             <li>Fresh Break
                                 Seasonal fresh fruit, yogurt and muesli cereal</li>
@@ -339,26 +342,22 @@
                         </ul>
                     </div>
                 </nav>
-            </section>
         </div>
         <!--Wine Awards-->
 
-        <div id="wine-con">
+        <section id="wine-con">
             <div id="wine-hero-con" class="grid-con">
                 <div id="wine-heading-box" class="col-span-full">
                     <h2 class="hero-img-h2"><span>Couples Resort</span><br>Wine Spectators Award of Excellence</h2>
                 </div>
             </div>
-            <div class="grid-con">
-                <div id="wine-text" class="col-span-full line-separator">
-                    <article>
+            <div class="grid-con" id="wine-text">
+                <div class="col-span-full line-separator"></div>
                         <h2 class="hidden">Wine Award</h2>
-                        <p>If you like, Sommeliers will help you choose a new refreshing beverage or help you in pairing a wine with your food.
+                        <p class="col-span-full">If you like, Sommeliers will help you choose a new refreshing beverage or help you in pairing a wine with your food.
                             Recognized for 8 years in a row with the prestigious Wine Spectator's Award of Excellence, Couples Resort offers acomprehensive collection of superb regional and world wines to compliment your experience at Couples Resort.  Our wine selections are continuously changing with new vintages being added generally every 2 weeks.</p>
-                    </article>
-                </div>
             </div>
-        </div>
+        </section>
    
         <!--Footer Awards-->
 

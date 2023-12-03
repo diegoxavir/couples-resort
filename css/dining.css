@@ -136,6 +136,7 @@ input, textarea {
 #hero-summary p {
     font-size: 14px;
     line-height: 22px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -178,13 +179,21 @@ input, textarea {
     align-self: end;
 }
 
-#meals-and-hours p {
-    margin-bottom: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
+.meals-list .col-span-full {
+padding-right: 40px;
 }
 
-#meals-and-hours p span {
+.meals-list li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+#meals-and-hours p:last-child {
+    margin-bottom: 20px;
+}
+
+.meals-list span {
     font-weight: bold;
 }
 
@@ -204,12 +213,23 @@ input, textarea {
 
 /* menu drop downs */
 
+
 .menu-con {
     margin-top: 30px;
-    text-align: center;
     background-color: #d4d4d4;
     width: 300px;
     margin-left: 41px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#daily-ft-con {
+    margin-top: 40px;
+}
+
+
+.menu-dropdowns {
+    text-align: center;
 }
 
 .menu-con label {
@@ -218,51 +238,49 @@ input, textarea {
 
 .menu-lists label p {
     display: inline;
-    margin-right: 30px;
-}
 
+}
 
 .menu-lists label img {
     width: 20px;
     height: 20px;
     transition: all .5s ease;
+}
+
+/*menu title spacing */
+
+.menu-lists label {
+    margin-left: 45px;
+}
+
+
+#daily-ft-con img {
     margin-right: 15px;
 }
 
-#starters-con label p {
-    padding-left: 0px;
-}
-
 #starters-con label img {
-    margin-right: 40px;
-}
-
-#starters-con label {
-    margin-left: -30px;
+    margin-right: 43px;
 }
 
 #entrees-con label img {
     margin-right: 45px;
 }
 
-#entrees-con label {
-    margin-left: -33px;
-}
-
 #desserts-con label img {
-    margin-right: 40px;
+    margin-right: 42px;
 }
 
-#desserts-con label {
-    margin-left: -30px;
-}
 
 #breakfast-con label img {
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
-#breakfast-con label {
-    margin-left: -30px;
+#lunch-con label img {
+    margin-right: 55px;
+}
+
+#drinks-con label img {
+    margin-right: 53px;
 }
 
 .menu-con input, .menu-dropdowns {
@@ -278,6 +296,8 @@ input, textarea {
 .menu-con input:checked ~ label img {
     transform: rotate(90deg);
 }
+
+/* Menu list styling */
 
 .menu-con ul {
     list-style: none;
@@ -302,6 +322,11 @@ input, textarea {
 .menu-lists {
     margin-bottom: 30px;
 }
+
+.menu-lists h3 {
+    padding-top: 10px;
+}
+
 
 .menu-lists h4 {
     margin-top: 10px;
@@ -331,7 +356,9 @@ input, textarea {
 
 }
 
-
+.menu-lists .menu-con:last-child {
+    margin-bottom: 40px;
+}
 
 /* Wine Awards */ 
 
@@ -344,6 +371,9 @@ input, textarea {
     align-self: end;
 }
 
+#wine-con p {
+    padding-top: 20px;
+}
 
 /* Footer */
 
