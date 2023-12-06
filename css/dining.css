@@ -8,6 +8,9 @@
 body {
     color: #626262;
     font-family: 'Sanchez', 'Times New Roman', serif;
+    font-size: 14px;
+    line-height: 22px;
+
 }
 
 p {
@@ -144,7 +147,7 @@ input, textarea {
 
 
 #meals-and-hours .content-nav {
-    background-color: #d8d8d8;
+    background-color: #efefef
 }
 
 #meals-and-hours-nav {
@@ -227,7 +230,6 @@ padding-right: 40px;
     margin-top: 40px;
 }
 
-
 .menu-dropdowns {
     text-align: center;
 }
@@ -283,11 +285,11 @@ padding-right: 40px;
     margin-right: 53px;
 }
 
+/* sibling selectors */
+
 .menu-con input, .menu-dropdowns {
     display: none;
 }
-
-/* sibling selectors */
 
 .menu-con input:checked ~ .menu-dropdowns {
     display: block;
@@ -402,7 +404,6 @@ padding-right: 40px;
 }
 
 #footer-contact-info p {
-    margin-bottom: 20px;
     line-height: 18px;
     font-size: 11px;
 }
