@@ -30,8 +30,12 @@ Couples Resort Responsive Build
     color: #626262;
     font-family: 'Sanchez', 'Times New Roman', serif;
     font-size: 14px;
-    line-height: 22px;
  }
+ 
+body p {
+   line-height: 22px;
+   margin-bottom: 20px;
+}
  
  a {
     text-decoration: none;
@@ -131,6 +135,11 @@ Couples Resort Responsive Build
     cursor: pointer;
  }
  
+ .book-now p {
+   margin-bottom: 0px;
+ }
+
+
  .book-now:hover {
     background-color: rgb(196, 28, 28);
  }
@@ -160,19 +169,10 @@ Couples Resort Responsive Build
     padding-top: 20px;
  }
  
- #hero-summary p {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 20px;
- }
- 
- /* 4. ---Main Hero Image Contact--- */
- 
+
+
 
  
-
-
-
  /* 5. ---Content Nav--- */
  
  #content {
@@ -268,10 +268,8 @@ padding-right: 10px;
 /* Drop Downs */
 
 .rentals-con {
-   margin-top: 30px;
-   background-color: #d4d4d4;
-   width: 300px;
-   margin-left: 41px;
+   margin-top: 12px;
+   background-color: #E8E7E7;
    padding-top: 5px;
    padding-bottom: 5px;
 }
@@ -282,6 +280,7 @@ padding-right: 10px;
 
 .rentals-dropdowns {
    text-align: center;
+   margin-top: 5px;
 }
 
 .rentals-con label {
@@ -297,6 +296,11 @@ padding-right: 10px;
    width: 20px;
    height: 20px;
    transition: all .5s ease;
+   margin-top: 5px;
+}
+
+.rentals-lists label span {
+   font-size: 16px;
 }
 
 /* Title spacing */
@@ -306,11 +310,11 @@ padding-right: 10px;
 }
 
 #spring-con img {
-   margin-right: 45px;
+   margin-right: 80px;
 }
 
 #winter-con label img {
-   margin-right: 43px;
+   margin-right: 78px;
 }
 
 /* Sibling Selectors */
@@ -322,6 +326,8 @@ padding-right: 10px;
 .rentals-con input:checked ~ .rentals-dropdowns {
    display: block;
 }
+
+
 
 .rentals-con input:checked ~ label img {
    transform: rotate(90deg);
@@ -338,22 +344,24 @@ padding-right: 10px;
 
 .rentals-con  ul li {
    display: block;
-   padding: 10px 0px 10px 0px;
+   padding-bottom: 10px;
    text-align: center;
-   color: #626262;
-   border-bottom: 1px solid #6b5b5b;
+
 }
 
 .rentals-dropdowns {
-   background-color: #ececee;
-}
-
-.rentals-lists {
-   margin-bottom: 30px;
+   background-color: #F8F8F8;
 }
 
 .rentals-lists h3 { 
    padding-top: 10px;
+   padding-bottom: 10px ;
+   color: #626262;
+   border-top: 1px solid #6b5b5b;
+}
+
+.rentals-lists h3:first-of-type { 
+   border-top: 0px;
 }
 
 .rentals-lists h4 {
@@ -362,7 +370,7 @@ padding-right: 10px;
 }
 
 .rentals-lists .rentals-con:last-child {
-   margin-bottom: 40px;
+   margin-bottom: 65px;
 }
  
 /* Extra Fees */
@@ -370,7 +378,7 @@ padding-right: 10px;
  #extra-fees-con {
     background-color: #f4f4f4;
     padding-top: 35px;
-    padding-bottom: 30px;
+
  }
  
  #extra-fees-con h2 {
@@ -390,8 +398,6 @@ padding-right: 10px;
      background-repeat: no-repeat;
     color: #fff;
     font-size: 12px;
-
-    padding-bottom: 80px;
  }
  
  #footer-hero h3 {
