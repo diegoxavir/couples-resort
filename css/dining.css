@@ -253,8 +253,11 @@ padding-right: 40px;
     margin-top: 5px;
 }
 
-.menu-con label {
+.menu-lists label {
+    display: flex;
     cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .menu-lists label p {
@@ -266,6 +269,8 @@ padding-right: 40px;
     height: 20px;
     transition: all .5s ease;
     margin-top: 5px;
+    margin-top: -0px;
+    margin-left: 20px;
 }
 
 .menu-lists label span {
@@ -274,24 +279,11 @@ padding-right: 40px;
 
 /*menu title spacing */
 
-.menu-lists label {
-    display: flex;
-
-}
-
 .menu-lists label span {
     justify-content: center;
 }
 
-.menu-lists label {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 
-.menu-lists label img {
-margin-top: -0px;
-margin-left: 20px;
-}
 
 
 #daily-ft-con img {
