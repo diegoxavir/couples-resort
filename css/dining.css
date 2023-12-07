@@ -128,6 +128,10 @@ input, textarea {
     cursor: pointer;
 }
 
+.book-now p {
+    margin-bottom: 0px;
+  }
+
 .book-now:hover {
     background-color: rgb(196, 28, 28);
 }
@@ -157,35 +161,37 @@ input, textarea {
     margin-bottom: 20px;   
 }
 
-/* Meals and Hours */
 
+ /* 5. ---Content Nav--- */
 
-#meals-and-hours .content-nav {
-    background-color: #efefef
-}
+ #content {
+    background-color: #efefef;
+ }
+ 
 
-#meals-and-hours-nav {
+  #content-nav {
     padding-top: 20px;
-}
-
-#meals-and-hours-nav ul {
-    list-style-type: none;
+ }
+ 
+ #content-nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-}
-
-#meals-and-hours-nav ul li {
+ }
+ #content-nav ul li {
     margin-bottom: 15px;
-}
+ }
+ 
+ #content-nav ul li a {
+   color: inherit;
+   padding: 5px;
+ }
+ 
+ #content-nav ul li a.selected {
+    border-left: #9a2018 solid 5px;
+  }
 
-#meals-and-hours-nav ul li a {
-    color: inherit;
-    padding: 5px;
-}
-
-#meals-and-hours-nav ul li a.selected {
-    border-left: #9a0218 solid 5px;
-}
+/* Meals and Hours */
 
 #meals-and-hours-hero-con {
     background: url(../images/mobile-dining-meals-and-hours.jpg) no-repeat;
@@ -269,9 +275,23 @@ padding-right: 40px;
 /*menu title spacing */
 
 .menu-lists label {
-    margin-left: 20px;
+    display: flex;
+
 }
 
+.menu-lists label span {
+    justify-content: center;
+}
+
+.menu-lists label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu-lists label img {
+margin-top: -0px;
+margin-left: 20px;
+}
 
 
 #daily-ft-con img {
@@ -393,10 +413,6 @@ padding-right: 40px;
 
 #wine-heading-box {
     align-self: end;
-}
-
-#wine-con p {
-    padding-top: 20px;
 }
 
 /* Footer */
