@@ -37,11 +37,31 @@
                 </div>
             </header>        
         <!-- Main Hero -->
+        
         <section id="hero" class="grid-con">
+
+            <section class="lightbox col-span-full" id="lightbox">
+                <a href="" class="lightbox-close">x</a>
+                <article>
+                    <p class="lb-heading">Check Availability</p>
+    
+                    <form action="booknowform" method="post" enctype="text/plain">
+                        <input name="date" type="date" placeholder="Start Your Romantic Experience">
+                        <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
+                        <input name="submit" type="submit" value="Let's Create Something Special">
+                    </form>
+                </article>
+            </section>
+            
             <h2 class="hidden">Book a stay with us</h2>                       
             <div id="book-now-hero" class="book-now col-start-3 col-span-2">
+                <a href="#lightbox">
                 <p>Book Now</p>
+            </a>
             </div>
+
+            
+
             <section id="hero-heading-box" class="col-span-full">
                 <h2 class="hero-img-h2">
                     <span>Couples Resort</span><br> 5 Star, Luxury Couples Resort &amp; Spa
@@ -246,6 +266,23 @@
                     <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
                 </div>
         </footer>
+
+        <!--Lightbox-->
+
+        <section class="lightbox" id="lightbox">
+            <a href="" class="lightbox-close">x</a>
+            <article>
+                <p class="lb-heading">Check Availability</p>
+
+                <form action="booknowform" method="post" enctype="text/plain">
+                    <input name="date" type="date" placeholder="Start Your Romantic Experience">
+                    <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
+                    <input name="submit" type="submit" value="Let's Create Something Special">
+                </form>
+            </article>
+        </section>
+
+
         </div>
         <script src="js/main.js"></script>   
     </body>

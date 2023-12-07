@@ -130,6 +130,7 @@ input, textarea {
 
 .book-now p {
     margin-bottom: 0px;
+    color: white;
   }
 
 .book-now:hover {
@@ -437,3 +438,72 @@ padding-right: 40px;
     line-height: 18px;
     font-size: 11px;
 }
+
+.lightbox {
+    width: 338px;
+    height: 293px;
+    position: absolute;
+    margin-left: 25px;
+    z-index: 1000;
+    display: none;
+    background-color: #871C15;
+    border-radius: 8px;
+  }
+ 
+  .lightbox-close {
+    position: relative;
+    top: -8px;
+    left: 150px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+ 
+  .lightbox-close:hover {
+    color: black;
+  }
+ 
+ .lightbox p {
+    color: white;
+ }
+ 
+  .lightbox article input {
+    margin-top: 20px;
+    width: 315px;
+    height: 31px;
+    border-radius: 8px;
+    border-color: #E1E0E0;
+    height: 32px;
+  }
+ 
+  .lightbox article input[type=submit], input[type=date] {
+    cursor: pointer;
+  }
+ 
+  .lightbox article input[type=submit] {
+    margin-top: 40px;
+    color: #fff;
+    background-color: #C54242;
+    border-color: #871C15;
+    height: 37px;
+ 
+ }
+ 
+  .lightbox:target {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+  .lightbox input::placeholder {
+    padding-left: 20px;
+  }
+ 
+  .lightbox input::-webkit-datetime-edit-year-field {
+    padding-left: 20px;
+  }
+ 
+ 
+ 
