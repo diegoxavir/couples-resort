@@ -397,6 +397,22 @@ Couples Resort Responsive Build
     height: 250px;
  }
  
+/*1F389 for party popper*/
+input[type=checkbox]:checked::after {
+   content: '\1F389';
+   border: none;
+   margin-left: 20px;
+}
+
+.newsletter {
+   display: flex;
+   align-items: baseline;
+}
+
+.newsletter input {
+   margin-left: 10px;
+}
+
  #contact-hero-form input[type="submit"] {
     padding: 12px 28px;
     background: #9a2018;
@@ -405,13 +421,27 @@ Couples Resort Responsive Build
     transition: all 200ms ease-in;
     width: 150px;
     align-self: flex-end;
+    cursor: pointer;  
+
+    animation-name: submit-spin;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
  }
+
+ @keyframes submit-spin {
+   70% {rotate: 0deg;}
+   100% {rotate: 360deg;}
+
+}
  
  #contact-hero-form input[type="submit"]:hover {
     background-color: #626262;
     border-radius: 0;
  }
  
+
+
  /* 8. ---Footer--- */
  
  #footer-hero {
