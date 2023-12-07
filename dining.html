@@ -44,23 +44,24 @@
 
                 <!--Lightbox-->
 
-                <section class="lightbox" id="lightbox">
+                <article class="lightbox col-span-full" id="lightboxlink">
+                    <h2 class="hidden">Book Now Lightbox</h2>
                     <a href="" class="lightbox-close">x</a>
                     <article>
-                        <p class="lb-heading">Check Availability</p>
-
+                        <h4 class="lb-heading">Check Availability</h4>  
                         <form action="booknowform" method="post" enctype="text/plain">
-                            <input name="date" type="date" placeholder="Start Your Romantic Experience">
+                            <input name="date" type="date">
                             <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
                             <input name="submit" type="submit" value="Let's Create Something Special">
                         </form>
                     </article>
-                </section>
+                </article>
+    
 
 
                 <h2 class="hidden">Our Dining Experience</h2>
                 <div id="book-now-hero" class="book-now col-start-3 col-span-2">
-                    <a href="#lightbox">
+                    <a href="#lightboxlink">
                     <p>Book Now</p>
                     </a>
                 </div>

@@ -380,7 +380,7 @@ Couples Resort Responsive Build
     margin-bottom: 25px;
  }
  
- 
+ /* checkbox and button animation */
  
  #contact-hero-form form {
     display: flex;
@@ -436,8 +436,8 @@ input[type=checkbox]:checked::after {
  }
 
  @keyframes submit-spin {
-   70% {rotate: 0deg;}
-   100% {rotate: 360deg;}
+   70% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
 
 }
  
@@ -505,7 +505,7 @@ input[type=checkbox]:checked::after {
    color: black;
  }
 
-.lightbox p {
+.lightbox h4 {
    color: white;
 }
 
