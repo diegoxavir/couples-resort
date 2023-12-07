@@ -289,7 +289,6 @@ padding-right: 10px;
 
 .rentals-lists label p {
    display: inline;
-
 }
 
 .rentals-lists label img {
@@ -395,9 +394,10 @@ padding-right: 10px;
  
  #footer-hero {
     background-image: url(../images/footer.jpg);
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     color: #fff;
     font-size: 12px;
+    padding-bottom: 45px;
  }
  
  #footer-hero h3 {
@@ -416,5 +416,6 @@ padding-right: 10px;
  
  #footer-contact-info p {
     line-height: 18px;
+    margin-bottom: 20px;
     font-size: 11px;
  }

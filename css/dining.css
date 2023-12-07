@@ -1,4 +1,25 @@
-#mobile-outline {
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
+
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer 
+ */
+
+
+ /* 1. ---General Styles--- */
+ 
+ #mobile-outline {
     outline: 20px solid #333;
     max-width: 412px;
     margin: 20px auto 20px auto;
@@ -9,12 +30,12 @@ body {
     color: #626262;
     font-family: 'Sanchez', 'Times New Roman', serif;
     font-size: 14px;
-    line-height: 22px;
-
 }
 
 p {
-    padding-top: 10px;
+
+    line-height: 22px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -107,6 +128,10 @@ input, textarea {
     cursor: pointer;
 }
 
+.book-now p {
+    margin-bottom: 0px;
+  }
+
 .book-now:hover {
     background-color: rgb(196, 28, 28);
 }
@@ -136,42 +161,37 @@ input, textarea {
     margin-bottom: 20px;   
 }
 
-#hero-summary p {
-    font-size: 14px;
-    line-height: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-/* Meals and Hours */
+ /* 5. ---Content Nav--- */
 
+ #content {
+    background-color: #efefef;
+ }
+ 
 
-#meals-and-hours .content-nav {
-    background-color: #efefef
-}
-
-#meals-and-hours-nav {
+  #content-nav {
     padding-top: 20px;
-}
-
-#meals-and-hours-nav ul {
-    list-style-type: none;
+ }
+ 
+ #content-nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-}
-
-#meals-and-hours-nav ul li {
+ }
+ #content-nav ul li {
     margin-bottom: 15px;
-}
+ }
+ 
+ #content-nav ul li a {
+   color: inherit;
+   padding: 5px;
+ }
+ 
+ #content-nav ul li a.selected {
+    border-left: #9a2018 solid 5px;
+  }
 
-#meals-and-hours-nav ul li a {
-    color: inherit;
-    padding: 5px;
-}
-
-#meals-and-hours-nav ul li a.selected {
-    border-left: #9a0218 solid 5px;
-}
+/* Meals and Hours */
 
 #meals-and-hours-hero-con {
     background: url(../images/mobile-dining-meals-and-hours.jpg) no-repeat;
@@ -218,10 +238,8 @@ padding-right: 40px;
 
 
 .menu-con {
-    margin-top: 30px;
-    background-color: #d4d4d4;
-    width: 300px;
-    margin-left: 41px;
+    margin-top: 12px;
+    background-color: #e8e7e7;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -232,6 +250,7 @@ padding-right: 40px;
 
 .menu-dropdowns {
     text-align: center;
+    margin-top: 5px;
 }
 
 .menu-con label {
@@ -240,49 +259,68 @@ padding-right: 40px;
 
 .menu-lists label p {
     display: inline;
-
 }
 
 .menu-lists label img {
     width: 20px;
     height: 20px;
     transition: all .5s ease;
+    margin-top: 5px;
+}
+
+.menu-lists label span {
+    font-size: 16px;
 }
 
 /*menu title spacing */
 
 .menu-lists label {
-    margin-left: 45px;
+    display: flex;
+
+}
+
+.menu-lists label span {
+    justify-content: center;
+}
+
+.menu-lists label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu-lists label img {
+margin-top: -0px;
+margin-left: 20px;
 }
 
 
 #daily-ft-con img {
-    margin-right: 15px;
+    margin-right: 80px;
 }
 
 #starters-con label img {
-    margin-right: 43px;
+    margin-right: 108px;
 }
 
 #entrees-con label img {
-    margin-right: 45px;
+    margin-right: 111px;
 }
 
 #desserts-con label img {
-    margin-right: 42px;
+    margin-right: 108px;
 }
 
 
 #breakfast-con label img {
-    margin-right: 35px;
+    margin-right: 103px;
 }
 
 #lunch-con label img {
-    margin-right: 55px;
+    margin-right: 123px;
 }
 
 #drinks-con label img {
-    margin-right: 53px;
+    margin-right: 119px;
 }
 
 /* sibling selectors */
@@ -301,38 +339,42 @@ padding-right: 40px;
 
 /* Menu list styling */
 
+.menu-dropdowns span {
+    font-weight: bold;
+}
+
 .menu-con ul {
     list-style: none;
     padding: 0;
     margin: 0;
-
 }
 
 .menu-con ul li {
     display: block;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     text-align: center;
-    color: #626262;
-    border-bottom: 1px solid #6b6b6b;
-
 }
 
 .menu-dropdowns {
-    background-color: #ececec;
-}
-
-.menu-lists {
-    margin-bottom: 30px;
+    background-color: #f8f8f8;
 }
 
 .menu-lists h3 {
     padding-top: 10px;
+    padding-bottom: 10px ;
+    color: #626262;
+    border-top: 1px solid #6b5b5b;
 }
 
+.menu-lists h3:first-of-type { 
+    border-top: 0px;
+ }
 
 .menu-lists h4 {
-    margin-top: 10px;
+    padding-top: 15px;
     margin-bottom: 10px;
+    color: #626262;
+    border-top: 1px solid #6b5b5b;
 }
 
 #drinks-con ul li {
@@ -359,7 +401,7 @@ padding-right: 40px;
 }
 
 .menu-lists .menu-con:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 65px;
 }
 
 /* Wine Awards */ 
@@ -373,10 +415,6 @@ padding-right: 40px;
     align-self: end;
 }
 
-#wine-con p {
-    padding-top: 20px;
-}
-
 /* Footer */
 
 #footer-hero {
@@ -385,7 +423,7 @@ padding-right: 40px;
     color: #fff;
     font-size: 12px;
     margin-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 #footer-hero h3 {
