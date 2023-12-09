@@ -465,7 +465,9 @@ padding-right: 10px;
     font-size: 16px;
  }
 
-
+ #extra-fees-con p:last-child {
+   padding-bottom: 30px;
+ }
 
  /* 10. ---Footer--- */
  
