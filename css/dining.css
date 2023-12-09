@@ -8,12 +8,13 @@ Couples Resort Responsive Build
 
     1.  General Styles
     2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer 
+    3.  Book Now Lightbox
+    4.  Main Hero Image
+    5.  Content Nav
+    6.  Meals and Hours
+    7.  Menu
+    8.  Wine Awards
+    9.  Footer
  */
 
 
@@ -53,7 +54,7 @@ input, textarea {
     color: #9a2018;
 }
 
-/* main nav */
+/* 2 main nav */
 
 #main-nav label img {
     width: 20px;
@@ -108,7 +109,76 @@ input, textarea {
     max-width: 382px;
 } 
 
-/* main hero img */ 
+
+/* 3. ---Book Now Lightbox--- */
+
+.lightbox {
+    width: 338px;
+    height: 293px;
+    position: absolute;
+    margin-left: 25px;
+    z-index: 1000;
+    display: none;
+    background-color: #871C15;
+    border-radius: 8px;
+  }
+ 
+  .lightbox-close {
+    position: relative;
+    top: -8px;
+    left: 150px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+ 
+  .lightbox-close:hover {
+    color: black;
+  }
+ 
+ .lightbox h4 {
+    color: white;
+ }
+ 
+  .lightbox article input {
+    margin-top: 20px;
+    width: 315px;
+    height: 31px;
+    border-radius: 8px;
+    border-color: #E1E0E0;
+    height: 32px;
+  }
+ 
+  .lightbox article input[type=submit], input[type=date] {
+    cursor: pointer;
+  }
+ 
+  .lightbox article input[type=submit] {
+    margin-top: 40px;
+    color: #fff;
+    background-color: #C54242;
+    border-color: #871C15;
+    height: 37px;
+ 
+ }
+ 
+  .lightbox:target {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+  .lightbox input::placeholder {
+    padding-left: 20px;
+  }
+ 
+  .lightbox input::-webkit-datetime-edit-year-field {
+    padding-left: 20px;
+  }
+ 
+/* 4. ---main hero img--- */ 
 
 #hero {
     background: url(../images/mobile-dining-hero.jpg) no-repeat;
@@ -192,7 +262,7 @@ input, textarea {
     border-left: #9a2018 solid 5px;
   }
 
-/* Meals and Hours */
+/* 6. ---Meals and Hours--- */
 
 #meals-and-hours-hero-con {
     background: url(../images/mobile-dining-meals-and-hours.jpg) no-repeat;
@@ -221,7 +291,7 @@ padding-right: 40px;
     font-weight: bold;
 }
 
-/* Menu */
+/* 7. ---Menu--- */
 
 
 #menu-hero-con {
@@ -283,9 +353,6 @@ padding-right: 40px;
 .menu-lists label span {
     justify-content: center;
 }
-
-
-
 
 #daily-ft-con img {
     margin-right: 80px;
@@ -397,7 +464,7 @@ padding-right: 40px;
     margin-bottom: 65px;
 }
 
-/* Wine Awards */ 
+/* 8. --- Wine Awards--- */ 
 
 #wine-hero-con {
     background: url(../images/mobile-dining-award.jpg) no-repeat;
@@ -408,7 +475,7 @@ padding-right: 40px;
     align-self: end;
 }
 
-/* Footer */
+/* 9. ---Footer--- */
 
 #footer-hero {
     background-image: url(../images/footer.jpg);
@@ -438,72 +505,3 @@ padding-right: 40px;
     line-height: 18px;
     font-size: 11px;
 }
-
-.lightbox {
-    width: 338px;
-    height: 293px;
-    position: absolute;
-    margin-left: 25px;
-    z-index: 1000;
-    display: none;
-    background-color: #871C15;
-    border-radius: 8px;
-  }
- 
-  .lightbox-close {
-    position: relative;
-    top: -8px;
-    left: 150px;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-  }
- 
-  .lightbox-close:hover {
-    color: black;
-  }
- 
- .lightbox p {
-    color: white;
- }
- 
-  .lightbox article input {
-    margin-top: 20px;
-    width: 315px;
-    height: 31px;
-    border-radius: 8px;
-    border-color: #E1E0E0;
-    height: 32px;
-  }
- 
-  .lightbox article input[type=submit], input[type=date] {
-    cursor: pointer;
-  }
- 
-  .lightbox article input[type=submit] {
-    margin-top: 40px;
-    color: #fff;
-    background-color: #C54242;
-    border-color: #871C15;
-    height: 37px;
- 
- }
- 
-  .lightbox:target {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
- 
-  .lightbox input::placeholder {
-    padding-left: 20px;
-  }
- 
-  .lightbox input::-webkit-datetime-edit-year-field {
-    padding-left: 20px;
-  }
- 
- 
- 

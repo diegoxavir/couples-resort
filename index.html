@@ -25,7 +25,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Packages</a></li>
+                            <li><a href="all-inclusive.html">Packages</a></li>
                             <li><a href="dining.html">Dining</a></li>
                             <li><a href="#">Spa Activites</a></li>
                             <li><a href="#">Reservations</a></li>
@@ -38,24 +38,27 @@
             </header>        
         <!-- Main Hero -->
         
+        <!--Lightbox-->
+
         <section id="hero" class="grid-con">
 
-            <section class="lightbox col-span-full" id="lightbox">
+            <section class="lightbox col-span-full" id="lightboxlink">
+                <h2 class="hidden">Book Now Lightbox</h2>
                 <a href="" class="lightbox-close">x</a>
                 <article>
-                    <p class="lb-heading">Check Availability</p>
-    
+                    <h4 class="lb-heading">Check Availability</h4>  
                     <form action="booknowform" method="post" enctype="text/plain">
-                        <input name="date" type="date" placeholder="Start Your Romantic Experience">
+                        <input name="date" type="date">
                         <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
                         <input name="submit" type="submit" value="Let's Create Something Special">
                     </form>
                 </article>
             </section>
+
             
             <h2 class="hidden">Book a stay with us</h2>                       
             <div id="book-now-hero" class="book-now col-start-3 col-span-2">
-                <a href="#lightbox">
+                <a href="#lightboxlink">
                 <p>Book Now</p>
             </a>
             </div>
@@ -84,7 +87,7 @@
                 <p id="hero-numbers">
                     Toll Free:+1 866 202-1179<br>
                     Fax:+1 613 637 2615<br>
-                    info[at]coupleresort.com
+                    info&#x40;coupleresort.com
                     <!-- discuss email obfuscation  -->
                 </p>   
             </div>
@@ -232,7 +235,7 @@
                 <h3 class="hidden">Phone, Fax and Email</h3>
                 <p>Toll Free:+1 877 201-1156<br>
                     FAX:+1 613 638 2217<br>
-                    E-mail: info[at]coupleresort.com </p>         
+                    E-mail: info&#x40;coupleresort.com </p>         
             </div>
             <div id="contact-hero-form" class="col-span-full">
                 <form action="email.php" method="POST" enctype="text/plain">
@@ -240,11 +243,11 @@
                     <input name="contactInfo" type="email" required placeholder="Phone number or Email">
                     <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
                     <label class="newsletter">
-                        <p> Subcribe to our Newsletter!</p> 
+                        <span> Subcribe to our Newsletter!</span> 
                         <input name=newsletter type=checkbox>
                     </label>
 
-                    <input name="submit" type="submit" value="Send">
+                    <input name="submit" type="submit" value="send">
                 </form>
             </div>
         </section>
@@ -267,20 +270,6 @@
                 </div>
         </footer>
 
-        <!--Lightbox-->
-
-        <section class="lightbox" id="lightbox">
-            <a href="" class="lightbox-close">x</a>
-            <article>
-                <p class="lb-heading">Check Availability</p>
-
-                <form action="booknowform" method="post" enctype="text/plain">
-                    <input name="date" type="date" placeholder="Start Your Romantic Experience">
-                    <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
-                    <input name="submit" type="submit" value="Let's Create Something Special">
-                </form>
-            </article>
-        </section>
 
 
         </div>

@@ -8,12 +8,14 @@ Couples Resort Responsive Build
 
     1.  General Styles
     2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer 
+    3.  Book Now Lightbox
+    4.  Main Hero Image
+    5.  Content Nav
+    6.  Key Experiences
+    7.  Bonuses
+    8.  Rentals
+    9.  Extra Fees
+    10. Footer 
  */
 
 
@@ -71,7 +73,7 @@ body p {
  }
  
  
- /*   ~ sibling selector   */
+ /* ~ sibling selector */
  
  
  #main-nav input:checked ~ #burger-con {
@@ -114,8 +116,75 @@ body p {
     max-width: 382px;
    }
  
- 
- /* 3. ---Main Hero Image--- */
+    /* 3. ---Book Now Lightbox--- */
+
+ .lightbox {
+   width: 338px;
+   height: 293px;
+   position: absolute;
+   margin-left: 25px;
+   z-index: 1000;
+   display: none;
+   background-color: #871C15;
+   border-radius: 8px;
+ }
+
+ .lightbox-close {
+   position: relative;
+   top: -8px;
+   left: 150px;
+   color: white;
+   font-size: 30px;
+   text-decoration: none;
+ }
+
+ .lightbox-close:hover {
+   color: black;
+ }
+
+.lightbox h4 {
+   color: white;
+}
+
+ .lightbox article input {
+   margin-top: 20px;
+   width: 315px;
+   height: 31px;
+   border-radius: 8px;
+   border-color: #E1E0E0;
+   height: 32px;
+ }
+
+ .lightbox article input[type=submit], input[type=date] {
+   cursor: pointer;
+ }
+
+ .lightbox article input[type=submit] {
+   margin-top: 40px;
+   color: #fff;
+   background-color: #C54242;
+   border-color: #871C15;
+   height: 37px;
+
+}
+
+ .lightbox:target {
+   display: flex;
+   align-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+
+ .lightbox input::placeholder {
+   padding-left: 20px;
+ }
+
+ .lightbox input::-webkit-datetime-edit-year-field {
+   padding-left: 20px;
+ }
+
+ /* 4. ---Main Hero Image--- */
  
  #hero {
     background: url(../images/mobile-all-inc-hero.jpg) no-repeat;
@@ -203,7 +272,7 @@ body p {
     border-left: #9a2018 solid 5px;
   }
  
- /* Key exp */
+ /* 6. ---Key exp--- */
  
  #key-exp-hero-con {
    background: url(../images/mobile-all-inc-key.jpg) no-repeat;
@@ -218,7 +287,7 @@ body p {
 padding-right: 10px;
 }
 
-/* Bonuses */
+/* 7. ---Bonuses--- */
 
 #bonuses-hero-con {
    background: url(../images/mobile-all-inc-bonuses.jpg) no-repeat;
@@ -253,7 +322,7 @@ padding-right: 10px;
  
  
  
- /* 6. ---Rentals--- */
+ /* 8. ---Rentals--- */
  
  #rentals-hero-con {
     background: url(../images/mobile-all-inc-rentals.jpg) no-repeat;
@@ -378,7 +447,7 @@ padding-right: 10px;
    margin-bottom: 65px;
 }
  
-/* Extra Fees */
+/* 9. ---Extra Fees--- */
 
  #extra-fees-con {
     background-color: #f4f4f4;
@@ -396,7 +465,9 @@ padding-right: 10px;
     font-size: 16px;
  }
 
- /* 8. ---Footer--- */
+
+
+ /* 10. ---Footer--- */
  
  #footer-hero {
     background-image: url(../images/footer.jpg);
@@ -424,74 +495,6 @@ padding-right: 10px;
     line-height: 18px;
     margin-bottom: 20px;
     font-size: 11px;
- }
-
- /* Book Now Lightbox */
-
- .lightbox {
-   width: 338px;
-   height: 293px;
-   position: absolute;
-   margin-left: 25px;
-   z-index: 1000;
-   display: none;
-   background-color: #871C15;
-   border-radius: 8px;
- }
-
- .lightbox-close {
-   position: relative;
-   top: -8px;
-   left: 150px;
-   color: white;
-   font-size: 30px;
-   text-decoration: none;
- }
-
- .lightbox-close:hover {
-   color: black;
- }
-
-.lightbox p {
-   color: white;
-}
-
- .lightbox article input {
-   margin-top: 20px;
-   width: 315px;
-   height: 31px;
-   border-radius: 8px;
-   border-color: #E1E0E0;
-   height: 32px;
- }
-
- .lightbox article input[type=submit], input[type=date] {
-   cursor: pointer;
- }
-
- .lightbox article input[type=submit] {
-   margin-top: 40px;
-   color: #fff;
-   background-color: #C54242;
-   border-color: #871C15;
-   height: 37px;
-
-}
-
- .lightbox:target {
-   display: flex;
-   align-content: center;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-items: center;
- }
-
- .lightbox input::placeholder {
-   padding-left: 20px;
- }
-
- .lightbox input::-webkit-datetime-edit-year-field {
-   padding-left: 20px;
  }
 
 

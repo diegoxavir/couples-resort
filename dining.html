@@ -26,7 +26,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Rooms</a></li>
-                            <li><a href="#">Packages</a></li>
+                            <li><a href="all-inclusive.html">Packages</a></li>
                             <li><a href="dining.html">Dining</a></li>
                             <li><a href="#">Spa Activites</a></li>
                             <li><a href="#">Reservations</a></li>
@@ -44,23 +44,24 @@
 
                 <!--Lightbox-->
 
-                <section class="lightbox" id="lightbox">
+                <article class="lightbox col-span-full" id="lightboxlink">
+                    <h2 class="hidden">Book Now Lightbox</h2>
                     <a href="" class="lightbox-close">x</a>
                     <article>
-                        <p class="lb-heading">Check Availability</p>
-
+                        <h4 class="lb-heading">Check Availability</h4>  
                         <form action="booknowform" method="post" enctype="text/plain">
-                            <input name="date" type="date" placeholder="Start Your Romantic Experience">
+                            <input name="date" type="date">
                             <input name="#ofdays" type="number" placeholder="Number of Romantic Evenings">
                             <input name="submit" type="submit" value="Let's Create Something Special">
                         </form>
                     </article>
-                </section>
+                </article>
+    
 
 
                 <h2 class="hidden">Our Dining Experience</h2>
                 <div id="book-now-hero" class="book-now col-start-3 col-span-2">
-                    <a href="#lightbox">
+                    <a href="#lightboxlink">
                     <p>Book Now</p>
                     </a>
                 </div>
@@ -243,7 +244,8 @@
                             <img src="images/arrow.svg" alt="a sideways triangle"><span>BREAKFAST</span>
                         </label>
                     <div class="menu-dropdowns">
-                        <h3>BREAKFAST ROOM-SERVICE HOURS - 8:30 am to 10:30 am. 866-202-1179 ext 102</h3>
+                        <h3>BREAKFAST ROOM-SERVICE HOURS <br> 8:30 am to 10:30 am. <br>
+                             866-202-1179 ext 102</h3>
                         <br>
                         <ul>
                             <li><span>Beverages</span><br>
@@ -282,7 +284,9 @@
                             <img src="images/arrow.svg" alt="a sideways triangle"><span>LUNCH</span>
                         </label>
                     <div class="menu-dropdowns">
-                        <h3>Daily from 12:00 - 4:00 pm. 866-202-1179 ext 108</h3>
+                        <h3>DAILY <br>
+                             12:00 - 4:00 pm.<br>
+                             866-202-1179 ext 108</h3>
                         <br>
                         <ul>
                             <li><span>Chicken club wrap...19</span><br>
@@ -308,7 +312,8 @@
                             <img src="images/arrow.svg" alt="a sideways triangle"><span>DRINKS</span>
                         </label>
                     <div class="menu-dropdowns">
-                        <h3>SEASONAL DRINK FEATURE (8OZ) $15
+                        <h3>SEASONAL DRINK FEATURE <br>
+                            (8OZ) $15 <br>
                             PITCHER (32OZ) $45</h3>
                         <br>
                         <ul>
